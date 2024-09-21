@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Kevin Yu 912410023
         </a>
       </header>
     </div>
