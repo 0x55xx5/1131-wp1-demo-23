@@ -30,7 +30,7 @@
 
 ```
 
-Video: W05-P3: Add js code into blog_xx.ejs and show blogs obtained from Supabase blog_xx table
+###  W05-P3: Add js code into blog_xx.ejs and show blogs obtained from Supabase blog_xx table
 
 ![](w05-p3.png)
 
