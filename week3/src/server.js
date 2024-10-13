@@ -1,5 +1,5 @@
 import express from 'express';
-import { db } from './db.js';
+import  pool from '../src/db.js';
 
 
 const app = express();
@@ -7,7 +7,7 @@ const port = process.env.port|| 5000;
 
 app.get('/api/blogs_23', async (req, res) => {
   try {
-      const result = await db.query('SELECT * FROM blog_posts_23');
+      const result = await pool.query('SELECT * FROM blog_post_23');
       console.log("json data: ",result.rows);
       res.json(result.rows);
   }   catch (error) {
