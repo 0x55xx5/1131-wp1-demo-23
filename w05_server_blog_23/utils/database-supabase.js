@@ -1,12 +1,13 @@
 import pg from 'pg'
 const { Pool } = pg
 
+
 const pool = new Pool({
-    host: 'aws-0-ap-southeast-1.pooler.supabase.com',
-    port:'5432',
-    user: 'postgres.yvjzzqlmjoisjuzjhffw',
-    password: 'wuhnyM-putzun-6vuzro',
-    database: 'postgres',
+    host: process.env.SUPABASE_HOST,
+    port: process.env.SUPABASE_PORT,
+    user: process.env.SUPABASE_USER,
+    password: process.env.SUPABASE_PWD,
+    database: process.env.SUPABASE_DB
 })
 
 console.log('connecting Supabase database', pool.options.database)
