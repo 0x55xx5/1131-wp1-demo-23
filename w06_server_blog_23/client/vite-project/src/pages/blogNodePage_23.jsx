@@ -3,14 +3,16 @@ import { useState, useEffect } from 'react'
 let api_url = 'http://localhost:3000/api/supa/blog_23'
 
 const fetchSupaBlog = async () => {
-  const [MyBlogs, setMyBlogs] = useState()
-  try {
-    const resp = await fetch(api_url)
-    const data = await resp.json()
-    console.log('db source:', data)
-    setMyBlogs(data)
-  } catch (error) {
-    console.log(error)
+  const [myBlogs, setMyBlogs] = useState()
+  const getMyData = async () => {
+    try {
+      const resp = await fetch(api_url)
+      const data = await resp.json()
+      console.log('db source:', data)
+      setMyBlogs(data)
+    } catch (error) {
+      console.log(error)
+    }
   }
 }
 
