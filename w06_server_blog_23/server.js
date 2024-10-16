@@ -1,4 +1,6 @@
 import express from 'express'
+import logger from 'morgan'
+import cors from 'cors'
 const app = express()
 
 import db from './utils/dbService.js'
@@ -7,8 +9,11 @@ import pool from './utils/database-supabase.js'
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(logger('dev'))
+app.use(cors())
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
+
 app.use('/blog_23', async (req, res) => {
   try {
     const results = await db.query(`select * from blog_post_23`)

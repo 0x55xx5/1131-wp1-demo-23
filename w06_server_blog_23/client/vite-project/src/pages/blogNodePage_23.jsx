@@ -1,23 +1,28 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Blog_23 from './pages/blogStaticPage_23'
-import Blog_Node_23 from './pages/blogNodePage_23'
-const app_blog_23 = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/static_my_blog' element={<Blog_23 />}></Route>
-        <Route path='/node_ss_my_blog' element={<Blog_Node_23 />}></Route>
-      </Routes>
-    </BrowserRouter>
-  )
+import { FaGlobe, FaMugSaucer } from 'react-icons/fa6'
+import { useState, useEffect } from 'react'
+let api_url = 'http://localhost:3000/api/supa/blog_23'
+
+const fetchSupaBlog = async () => {
+  const [MyBlogs, setMyBlogs] = useState()
+  try {
+    const resp = await fetch(api_url)
+    const data = await resp.json()
+    console.log('db source:', data)
+    setMyBlogs(data)
+  } catch (error) {
+    console.log(error)
+  }
 }
-/*
-const app_23 = () => {
+
+const blog_node_23 = () => {
+  useEffect(() => {
+    fetchSupaBlog()
+  }, []) //只做一次
   return (
     <>
       <section className='blogs'>
         <div className='section-title'>
-          <h2>latest blogs using breakpoints</h2>
+          <h2>SERVER : latest blogs using breakpoints data from db</h2>
         </div>
         <div className='blogs-center'>
           <article className='blog'>
@@ -28,7 +33,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <i className='fa-solid fa-mug-saucer'></i>
+                lifestyle <FaMugSaucer />
               </span>
               <h3>889seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -43,7 +48,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                travel <i className='fa-solid fa-globe'></i>
+                travel <FaGlobe />
               </span>
               <h3>travel to paris</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -58,7 +63,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <i className='fa-solid fa-mug-saucer'></i>
+                lifestyle <FaMugSaucer />
               </span>
               <h3>seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -73,7 +78,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <i className='fa-solid fa-mug-saucer'></i>
+                lifestyle <FaMugSaucer />
               </span>
               <h3>seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -84,5 +89,5 @@ const app_23 = () => {
       </section>
     </>
   )
-}*/
-export default app_blog_23
+}
+export default blog_node_23

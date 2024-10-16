@@ -15,7 +15,10 @@ Date:   Wed Oct 16 18:38:52 2024 +0800
 ![](w06-p2.png)
 
 ```
+Author: Yu <912410023>
+Date:   Wed Oct 16 19:23:44 2024 +0800
 
+    W06-P2: Create a vite, and show 4 static blogs from blog.html
 ```
 
 #### W06-P3: Create BlogStaticPage_xx component to show 4 static photos with corresponding react-icons
@@ -23,5 +26,5 @@ Date:   Wed Oct 16 18:38:52 2024 +0800
 ![](w06-p3.png)
 
 ```
-
+W06-P3: Create BlogStaticPage_xx component to show 4 static photos with corresponding react-icons
 ```
