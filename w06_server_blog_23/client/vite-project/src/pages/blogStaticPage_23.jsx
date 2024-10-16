@@ -1,17 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Blog_23 from './pages/blogStaticPage_23'
-
-const app_blog_23 = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/static_my_blog' element={<Blog_23 />}></Route>
-      </Routes>
-    </BrowserRouter>
-  )
-}
-/*
-const app_23 = () => {
+import { FaGlobe, FaMugSaucer } from 'react-icons/fa6'
+const blog_23 = () => {
   return (
     <>
       <section className='blogs'>
@@ -27,7 +15,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <i className='fa-solid fa-mug-saucer'></i>
+                lifestyle <FaMugSaucer />
               </span>
               <h3>889seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -42,7 +30,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                travel <i className='fa-solid fa-globe'></i>
+                travel <FaGlobe />
               </span>
               <h3>travel to paris</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -57,7 +45,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <i className='fa-solid fa-mug-saucer'></i>
+                lifestyle <FaMugSaucer />
               </span>
               <h3>seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -72,7 +60,7 @@ const app_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <i className='fa-solid fa-mug-saucer'></i>
+                lifestyle <FaMugSaucer />
               </span>
               <h3>seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -83,5 +71,5 @@ const app_23 = () => {
       </section>
     </>
   )
-}*/
-export default app_blog_23
+}
+export default blog_23

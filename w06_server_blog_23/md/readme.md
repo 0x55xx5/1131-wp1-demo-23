@@ -10,9 +10,17 @@ Date:   Wed Oct 16 18:38:52 2024 +0800
     W06-P1: Insert 9 blogs into Supabase, and retrieve through route localhost:3000/api/blog_xx
 ```
 
-Video: W06-P2: Create a vite, and show 4 static blogs from blog.html
+#### Video: W06-P2: Create a vite, and show 4 static blogs from blog.html
 
 ![](w06-p2.png)
+
+```
+
+```
+
+#### W06-P3: Create BlogStaticPage_xx component to show 4 static photos with corresponding react-icons
+
+![](w06-p3.png)
 
 ```
 
