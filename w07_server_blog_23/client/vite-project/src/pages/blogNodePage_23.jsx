@@ -15,7 +15,7 @@ const blog_node_23 = () => {
     }
   }
   useEffect(() => {
-    getMyBlogData() //要format一下 不然看錯function寫到現有comp外面會錯
+    getMyBlogData() //格式看錯
   }, []) //只做一次
   return (
     <>

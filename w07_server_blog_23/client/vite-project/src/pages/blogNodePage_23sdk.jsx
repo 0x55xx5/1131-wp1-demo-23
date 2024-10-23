@@ -1,21 +1,20 @@
 import { FaGlobe, FaMugSaucer } from 'react-icons/fa6'
 import { useState, useEffect } from 'react'
-let api_url = 'http://localhost:3000/api/supa/blog_23'
+import { sdk } from '../sdk/SupaSDK'
 
-const blog_node_23 = () => {
+const blog_node_23_Sdk = () => {
   const [myBlogs, setMyBlogs] = useState()
   const getMyBlogData = async () => {
     try {
-      const resp = await fetch(api_url)
-      const data = await resp.json()
-      console.log('db source:', data)
-      setMyBlogs(data)
+      let { data: d, error } = await sdk.from('blog_post_23_s').select('*')
+      console.log('db source:', d)
+      setMyBlogs(d)
     } catch (error) {
       console.log(error)
     }
   }
   useEffect(() => {
-    getMyBlogData() //要format一下 不然看錯function寫到現有comp外面會錯
+    getMyBlogData() //格式看錯
   }, []) //只做一次
   return (
     <>
@@ -89,4 +88,4 @@ const blog_node_23 = () => {
     </>
   )
 }
-export default blog_node_23
+export default blog_node_23_Sdk
