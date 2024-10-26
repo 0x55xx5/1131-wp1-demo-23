@@ -1,0 +1,6 @@
+SUPABASE_HOST=aws-0-ap-southeast-1.pooler.supabase.com
+SUPABASE_PORT=5432
+SUPABASE_USER=postgres.yvjzzqlmjoisjuzjhffw
+SUPABASE_PWD=
+SUPABASE_DB=postgres
+DATABASE=LOCALLOCAL

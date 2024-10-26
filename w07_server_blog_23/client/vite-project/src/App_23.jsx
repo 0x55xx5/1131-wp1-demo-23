@@ -1,27 +1,25 @@
-import { FaGlobe, FaMugSaucer } from 'react-icons/fa6'
-import { useState, useEffect } from 'react'
-let api_url = 'http://localhost:3000/api/supa/blog_23'
-
-const blog_node_23 = () => {
-  const [myBlogs, setMyBlogs] = useState()
-  const getMyBlogData = async () => {
-    try {
-      const resp = await fetch(api_url)
-      const data = await resp.json()
-      console.log('db source:', data)
-      setMyBlogs(data)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  useEffect(() => {
-    getMyBlogData() //要format一下 不然看錯function寫到現有comp外面會錯
-  }, []) //只做一次
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Blog_23 from './pages/blogStaticPage_23'
+import Blog_Node_23 from './pages/blogNodePage_23'
+import Blog_node_23_Sdk from './pages/blogNodePage_23sdk'
+const app_blog_23 = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/static_my_blog' element={<Blog_23 />}></Route>
+        <Route path='/node_ss_my_blog' element={<Blog_Node_23 />}></Route>
+        <Route path='/SDK_ss_my_blog' element={<Blog_node_23_Sdk />}></Route>
+      </Routes>
+    </BrowserRouter>
+  )
+}
+/*
+const app_23 = () => {
   return (
     <>
       <section className='blogs'>
         <div className='section-title'>
-          <h2>SERVER : latest blogs using breakpoints data from db</h2>
+          <h2>latest blogs using breakpoints</h2>
         </div>
         <div className='blogs-center'>
           <article className='blog'>
@@ -32,7 +30,7 @@ const blog_node_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <FaMugSaucer />
+                lifestyle <i className='fa-solid fa-mug-saucer'></i>
               </span>
               <h3>889seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -47,7 +45,7 @@ const blog_node_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                travel <FaGlobe />
+                travel <i className='fa-solid fa-globe'></i>
               </span>
               <h3>travel to paris</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -62,7 +60,7 @@ const blog_node_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <FaMugSaucer />
+                lifestyle <i className='fa-solid fa-mug-saucer'></i>
               </span>
               <h3>seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -77,7 +75,7 @@ const blog_node_23 = () => {
             />
             <div className='blog-content'>
               <span>
-                lifestyle <FaMugSaucer />
+                lifestyle <i className='fa-solid fa-mug-saucer'></i>
               </span>
               <h3>seven reasons why coffee is awesome</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -88,5 +86,5 @@ const blog_node_23 = () => {
       </section>
     </>
   )
-}
-export default blog_node_23
+}*/
+export default app_blog_23
