@@ -48,5 +48,6 @@ b442d5a Mario Catuogno  Sat Oct 26 19:56:07 2024 +0800  add pdf
 ![](w07-p4.png)
 
 ```
+e49120a   Sat Oct 26 22:47:01 2024 +0800  W07-P4: Create Blog-xx component for each blog, and show correctly
 
 ```
