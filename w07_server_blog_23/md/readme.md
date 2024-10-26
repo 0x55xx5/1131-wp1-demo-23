@@ -1,4 +1,4 @@
-### vercel: 
+### vercel: https://1131-wp1-demo-23.vercel.app/static_my_blog
 
 #### W07-P1: Get 9 blogs from Node server and show them correctly
 
