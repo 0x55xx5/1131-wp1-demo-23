@@ -1,3 +1,5 @@
+### vercel: 
+
 #### W07-P1: Get 9 blogs from Node server and show them correctly
 
 ![](w07-p1.png)
