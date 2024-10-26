@@ -6,6 +6,8 @@
 
 ```
 
+d9d23be Mario Catuogno  Sat Oct 26 21:35:09 2024 +0800  deploy vercel
+b442d5a Mario Catuogno  Sat Oct 26 19:56:07 2024 +0800  add pdf
 ```
 
 ### W07-P2: Deploy Github repo 1131_2N_classdemo_xx to Vercel
@@ -23,7 +25,7 @@
 ![](w07-p2-3.png)
 
 ```
-
+0544d12 Mario Catuogno  Sat Oct 26 21:51:50 2024 +0800  w7p1p2
 ```
 
 ### W07-P3: Create BlogSupaPage_xx to access blogs from Supabase
