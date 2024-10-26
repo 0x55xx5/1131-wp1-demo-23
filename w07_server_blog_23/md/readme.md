@@ -40,6 +40,7 @@ b442d5a Mario Catuogno  Sat Oct 26 19:56:07 2024 +0800  add pdf
 
 ```
 
+68468a4 Mario Catuogno  Sat Oct 26 22:10:10 2024 +0800  W07-P3: Create BlogSupaPage_xx to access blogs from Supabase
 ```
 
 ### W07-P4: Create Blog-xx component for each blog, and show correctly
