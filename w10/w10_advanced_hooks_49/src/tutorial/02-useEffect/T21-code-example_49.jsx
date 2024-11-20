@@ -4,6 +4,7 @@ const CodeExample = () => {
   const [value1, setValue1] = useState(0)
   const [value2, setValue2] = useState(0)
   const [value3, setValue3] = useState(0)
+  const [value, setValueTest] = useState(0)
 
   // run each time when rendering
   useEffect(() => {
@@ -20,6 +21,21 @@ const CodeExample = () => {
     console.log('value3 ' + value3)
   }, [value3])
 
+    // run each time when rendering
+    useEffect(() => {
+      console.log('btn value1 ' + value)
+    })
+  
+    // run only once
+    useEffect(() => {
+      console.log('btn value2 ' + value)
+    }, [])
+  
+    // run only value3 changes
+    useEffect(() => {
+      console.log('btn value3 ' + value)
+    }, [value])
+
   return (
     <div>
       <h1>value1 : {value1}</h1>
@@ -33,6 +49,10 @@ const CodeExample = () => {
       <h1>value3 : {value3}</h1>
       <button className='btn' onClick={() => setValue3(value3 + 1)}>
         click btn3
+      </button>
+      <h1>value : {value}</h1>
+      <button className='btn' onClick={() => setValueTest(value + 1)}>
+        click btn4
       </button>
     </div>
   );
