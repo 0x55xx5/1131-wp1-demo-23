@@ -39,7 +39,7 @@ const changeMenuFilter = (category) => {
         <div className='section-center'>
           <section className='menu'>
             <div class='title'>
-              <h2>Fetch Supabase By Category: CHONG SHAO, 912410049</h2>
+              <h2>Fetch Supabase By Category: KKK, 912410023</h2>
               <div class='underline'></div>
             </div>
             <div className='btn-container'>
