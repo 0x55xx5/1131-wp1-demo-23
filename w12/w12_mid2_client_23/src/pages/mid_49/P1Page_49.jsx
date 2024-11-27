@@ -1,6 +1,9 @@
+import Wrapper from '../../assets/wrapper/menu_23';
+
 const P1Page_49 = () => {
   return (
     <>
+      <Wrapper>
       <section className='menu-demo'>
         <div className='section-center'>
           <section className='menu'>
@@ -92,6 +95,7 @@ const P1Page_49 = () => {
           </section>
         </div>
       </section>
+      </Wrapper>
     </>
   );
 };

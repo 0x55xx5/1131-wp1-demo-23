@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom"; 
+import NavBar from '../components/NavBar';
 const HomePage_LO = () => {
   return (
     <>
@@ -8,6 +9,7 @@ const HomePage_LO = () => {
           LO
         </h3>
       </div>
+      <NavBar />
       <Outlet />
     </>
 
