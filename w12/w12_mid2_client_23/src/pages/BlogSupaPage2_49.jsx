@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react'
 
 import { supabase } from '../db/clientSupabase'
 import Blog_49 from '../components/Blog_49'
+import Wrapper from '../assets/wrapper/blogStyled_23'
 
 const BlogSupaPage2_49 = () => {
-  const [name, setName] = useState('Hsingtai Chung')
-  const [id, setId] = useState(123456789)
+  const [name, setName] = useState('yu kkk')
+  const [id, setId] = useState(9124100000023)
   const [blogs, setBlogs] = useState([])
 
   const fetchBlogsFromSupabase = async () => {
@@ -27,6 +28,7 @@ const BlogSupaPage2_49 = () => {
   }, [])
 
   return (
+    <Wrapper>
     <section className='blogs'>
       <div className='section-title'>
         <h2>latest blogs from Supabase</h2>
@@ -49,6 +51,7 @@ const BlogSupaPage2_49 = () => {
         })}
       </div>
     </section>
+    </Wrapper>
   )
 }
 
