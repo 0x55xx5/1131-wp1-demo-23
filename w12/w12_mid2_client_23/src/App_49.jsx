@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route ,createBrowserRouter,RouterProvider} from 
 import {HomePage_49,BlogStaticPage_49,BlogNodePage_49,BlogSupaPage_49,BlogSupaPage2_49,HomePage_LO} from './pages'
 import {P1Page_49,P2Page_49,P3Page_49} from './pages/mid_49'
 import MidP4Page_49 from './pages/mid_49/P4Page_49';
-import NavBar from './components/NavBar';
+
 
 const routersMap= createBrowserRouter([
   {
