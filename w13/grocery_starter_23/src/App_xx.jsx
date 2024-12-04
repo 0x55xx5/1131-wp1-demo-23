@@ -1,9 +1,9 @@
-import Ge from './page/g'
+import Gro from './page/g'
 
 const App_xx = () => {
   return (
     <>
-      <Ge />
+      <Gro />
     </>
   );
 };
