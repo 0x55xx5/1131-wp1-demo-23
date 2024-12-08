@@ -15,7 +15,7 @@ import {toast} from  'react-toastify';
 
   }
   const rmoItm = (rid) => {
-    const lst = itms.filter((item) => item.id !== rid);
+    let lst = itms.filter((item) => item.id !== rid);
     //setItms(newItms);
     setLocal(lst);   
     getLocal();
