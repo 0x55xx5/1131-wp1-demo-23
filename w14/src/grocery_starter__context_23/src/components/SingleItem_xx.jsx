@@ -1,7 +1,7 @@
-import { useMyAppContext } from "../../../grocery_starter__context_23/src/components/gxContext";
+import { useMyAppContext } from "../gxcontext";
 
 const SingleItem_xx = ({ item }) => {
-  const{rmItm,editItm} = useMyAppContext();
+  const{rmoItm,editItm} = useMyAppContext();
   return (
     <div className="single-item">
    
@@ -22,7 +22,7 @@ const SingleItem_xx = ({ item }) => {
       <button
         className="btn remove-btn"
         onClick={() => {
-          rmItm(item.id);
+          rmoItm(item.id);
         }}
       >
         delete

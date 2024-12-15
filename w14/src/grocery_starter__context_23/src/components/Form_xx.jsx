@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useMyAppContext } from "../../../grocery_starter__context_23/src/components/gxContext";
+import { useMyAppContext } from "../gxcontext";
 
 
 const Form_xx = () => {
  
   const [itemName, setItemName] = useState('');
-  
-  const {addItem} = useMyAppContext();
+
+const {addItem} = useMyAppContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -1,9 +1,9 @@
 import SingleItem_xx from './SingleItem_xx';
-import { useMyAppContext } from "./gxContext";
+import { useMyAppContext } from "../gxcontext";
 
 const Items_xx = () => {
   //
-  const {itms} = useMyAppContext();
+const {itms}= useMyAppContext();
 
   return (
     <div className='items'>
